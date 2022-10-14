@@ -1,0 +1,23 @@
+{
+  "extends": "./tsconfig.base.json",
+  "include": ["./src"],
+  "exclude": [
+    "./src/components/**/*.story.tsx",
+    "./src/components/**/*.mock.ts",
+    "./src/components/**/*.test.tsx",
+    "./src/components/**/*.test.ts",
+    "coverage"
+  ],
+  "compilerOptions": {
+    // "rootDir": "src",
+    // "declaration": true,
+    // "declarationDir": "dist/types",
+    // "emitDeclarationOnly": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "strictBindCallApply": true,
+    "moduleResolution": "node",
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true
+  }
+}
