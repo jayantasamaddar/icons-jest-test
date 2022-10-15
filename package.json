@@ -1,7 +1,7 @@
 {
   "name": "icons-jest-test",
-  "version": "0.0.1",
-  "description": "Testing React Components using Icon Library with Jest",
+  "version": "1.0.0",
+  "description": "This repository is a basic setup using TypeScript, React, ReactSVG Icon Components, Storybook, Emotion.js, Jest. Usually, it is a lot of trouble setting something like this up, to get Storybook, Emotion and Jest to play well together.",
   "main": "index.ts",
   "author": "Jayanta Samaddar",
   "license": "MIT",
@@ -9,8 +9,18 @@
     "type": "git",
     "url": "git+https://github.com/jayantasamaddar/icons-jest-test.git"
   },
+  "keywords": [
+    "react",
+    "svg",
+    "storybook",
+    "jest",
+    "emotion",
+    "styled components",
+    "typescript"
+  ],
   "scripts": {
     "build:types": "tsc --declarationDir dist/types --declaration --emitDeclarationOnly",
+    "ts-check": "tsc --noemit",
     "format": "prettier --write src",
     "test": "jest",
     "test:watch": "jest --watch",
@@ -34,6 +44,7 @@
     "@babel/preset-typescript": "^7.18.6",
     "@emotion/babel-plugin": "^11.10.2",
     "@emotion/jest": "^11.10.0",
+    "@react-theming/storybook-addon": "^1.1.7",
     "@storybook/addon-a11y": "^6.5.12",
     "@storybook/addon-actions": "^6.5.12",
     "@storybook/addon-essentials": "^6.5.12",

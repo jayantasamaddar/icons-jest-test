@@ -6,7 +6,6 @@ import {
 } from '@storybook/react';
 
 import { Checkbox } from './Checkbox';
-import { ThemeProvider } from '../ThemeProvider';
 
 interface IndeterminateTemplateProps {
   [key: string]: boolean;
@@ -17,13 +16,6 @@ type checkedProps = boolean | 'indeterminate';
 export default {
   title: 'Components/Checkbox',
   component: Checkbox,
-  decorators: [
-    Story => (
-      <ThemeProvider>
-        <Story />
-      </ThemeProvider>
-    ),
-  ],
 } as ComponentMeta<typeof Checkbox>;
 
 /** Template 1 */

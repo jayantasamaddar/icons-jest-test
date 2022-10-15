@@ -17,8 +17,6 @@ import { MinusMinor, TickMinor } from '@zenius-one/ursa-icons';
 import { Icon } from '../Icon';
 import { generateUniqueID } from '../../utilities';
 
-console.log({ MinusMinor });
-
 export interface CheckboxProps {
   /** Unique identifier for checkbox input */
   id?: string;

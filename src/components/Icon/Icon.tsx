@@ -2,7 +2,7 @@ import React, { FC, ReactElement } from 'react';
 import { IconSource } from '../../types';
 import styled from '@emotion/styled';
 import type { Color as themeColor } from '../../types/theme';
-import { useTestId } from '../../utilities';
+import { generateUniqueID, useTestId } from '../../utilities';
 
 type colorKeys = keyof themeColor;
 
@@ -88,6 +88,8 @@ const UrsaIcon: FC<IconProps> = ({
   // Content Markup based on sourceType
   /*********************************************************************************/
 
+  const _id = generateUniqueID('Ursa-Icon');
+
   const iconMarkup = {
     function: (
       <IconSVGComponent
@@ -114,7 +116,7 @@ const UrsaIcon: FC<IconProps> = ({
   /*****************************************************************/
 
   return (
-    <span className={`UrsaIcon ${className || ''}`} onClick={onClick}>
+    <span id={_id} className={`Ursa-Icon ${className || ''}`} onClick={onClick}>
       {iconMarkup[sourceType]}
     </span>
   );

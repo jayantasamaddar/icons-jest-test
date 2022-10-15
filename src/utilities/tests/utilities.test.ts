@@ -40,8 +40,8 @@ describe('utilities', () => {
     });
     describe('Test when Server', () => {
       beforeEach(() => {
-        delete global.window;
-        delete global.document;
+        delete (global as any).window;
+        delete (global as any).document;
       });
       afterEach(() => {
         global.window = window;

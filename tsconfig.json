@@ -1,6 +1,6 @@
 {
   "extends": "./tsconfig.base.json",
-  "include": ["./src"],
+  "include": ["./src", "./config/__mocks__"],
   "exclude": [
     "./src/components/**/*.story.tsx",
     "./src/components/**/*.mock.ts",

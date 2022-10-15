@@ -1,9 +1,9 @@
 import React, { forwardRef, SVGProps } from 'react';
 
-const SVGMock = forwardRef<SVGSVGElement, SVGProps<SVGSVGElement>>(
+const SvgMock = forwardRef<SVGSVGElement, SVGProps<SVGSVGElement>>(
   (props, ref) => (
     <svg
-      name="SVGMock"
+      name="SvgMock"
       viewBox="0 0 20 20"
       xmlns="http://www.w3.org/2000/svg"
       className="Ursa-IconSVG"
@@ -16,8 +16,9 @@ const SVGMock = forwardRef<SVGSVGElement, SVGProps<SVGSVGElement>>(
   )
 );
 
-SVGMock.displayName = 'SVGMock';
+SvgMock.displayName = 'SvgMock';
 
-export const TickMinor = SVGMock;
-export const MinusMinor = SVGMock;
-export default SVGMock;
+export const SvgTickMinor = SvgMock;
+export const SvgMinusMinor = SvgMock;
+export const SvgHomeMajor = SvgMock;
+export default SvgMock;
